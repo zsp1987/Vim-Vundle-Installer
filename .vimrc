@@ -59,6 +59,7 @@ set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 nnoremap <space> za
+set backspace=indent,eol,start
 
 nnoremap j gj
 nnoremap k gk
