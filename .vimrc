@@ -10,9 +10,18 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
 Plugin 'ctrlp.vim'
 Plugin 'neocomplcache'
-
-Plugin 'https://github.com/davidhalter/jedi-vim.git'
 Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
+
+"plugin for angular
+"Plugin "pangloss/vim-javascript"
+"Plugin "othree/javascript-libraries-syntax.vim"
+"Plugin "matthewsimo/angular-vim-snippets"
+"Plugin "claco/jasmine.vim"
+"Plugin "scrooloose/syntastic.git" 
+
+"plugin for python
+Plugin 'https://github.com/davidhalter/jedi-vim.git'
+
 call vundle#end()
 
 filetype plugin indent on
