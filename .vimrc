@@ -5,19 +5,24 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
-Plugin 'ctrlp.vim'
-Plugin 'neocomplcache'
-Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
 
-"plugin for angular
-"Plugin "pangloss/vim-javascript"
-"Plugin "othree/javascript-libraries-syntax.vim"
-"Plugin "matthewsimo/angular-vim-snippets"
-"Plugin "claco/jasmine.vim"
-"Plugin "scrooloose/syntastic.git" 
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'neocomplcache'
+Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/neosnippet-snippets'
+
+Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
+Plugin 'scrooloose/syntastic.git' 
+
+" plugin for angular
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'matthewsimo/angular-vim-snippets'
+Plugin 'claco/jasmine.vim'
 
 "plugin for python
 Plugin 'https://github.com/davidhalter/jedi-vim.git'
