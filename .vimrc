@@ -5,15 +5,19 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+
 Plugin 'L9'
+Plugin 'molokai'
 
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'neocomplcache'
-Bundle 'Shougo/neosnippet'
-Bundle 'Shougo/neosnippet-snippets'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'surround.vim'
 
 Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
 Plugin 'scrooloose/syntastic.git' 
@@ -32,7 +36,7 @@ call vundle#end()
 filetype plugin indent on
 syntax enable
 
-colorscheme desert
+colorscheme molokai
 if has("gui_running")
     " uncomment guifont according to your system
     set guifont=Monaco:h12
