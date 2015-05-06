@@ -39,7 +39,7 @@ syntax enable
 colorscheme molokai
 if has("gui_running")
     " uncomment guifont according to your system
-    set guifont=Monaco:h12
+    " set guifont=Monaco:h12
     " set guifont=ubuntu\ mono\ 14
     set lines=40 columns=120
 endif
