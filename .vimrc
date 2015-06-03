@@ -11,25 +11,32 @@ Plugin 'molokai'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
+
 Plugin 'ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'mattn/emmet-vim'
 
-Plugin 'neocomplcache'
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
 Plugin 'surround.vim'
+Plugin 'Auto-Pairs'
+
+Plugin 'scrooloose/syntastic.git' 
+Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
-Plugin 'scrooloose/syntastic.git' 
 
 " plugin for angular
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'pangloss/vim-javascript'
-Plugin 'matthewsimo/angular-vim-snippets'
 Plugin 'claco/jasmine.vim'
 
 "plugin for python
 Plugin 'https://github.com/davidhalter/jedi-vim.git'
+
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
 
 call vundle#end()
 
@@ -39,13 +46,14 @@ syntax enable
 colorscheme molokai
 if has("gui_running")
     " uncomment guifont according to your system
-    " set guifont=Monaco:h12
+    set guifont=Monaco:h14
     " set guifont=ubuntu\ mono\ 14
     set lines=40 columns=120
 endif
 
 " common settings
 set tabstop=4
+set shiftwidth=4
 set softtabstop=4
 set expandtab
 
@@ -70,3 +78,8 @@ nnoremap k gk
 
 let mapleader=","
 autocmd FileType python setlocal completeopt-=preview
+
+" Trigger configuration. Do not use <tab> if you use
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
