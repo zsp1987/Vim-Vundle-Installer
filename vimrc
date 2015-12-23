@@ -7,7 +7,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'L9'
-Plugin 'molokai'
+Plugin 'Solarized'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -21,21 +21,15 @@ Plugin 'Auto-Pairs'
 
 Plugin 'scrooloose/syntastic.git' 
 Plugin 'Valloric/YouCompleteMe'
-
-Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
+Plugin 'bling/vim-airline'
 
 " plugin for angular
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'claco/jasmine.vim'
 
-"plugin for python
-Plugin 'https://github.com/davidhalter/jedi-vim.git'
-
-" Track the engine.
+" snippets
 Plugin 'SirVer/ultisnips'
-
-" Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
 
 call vundle#end()
@@ -43,12 +37,16 @@ call vundle#end()
 filetype plugin indent on
 syntax enable
 
-colorscheme molokai
 if has("gui_running")
+    set background=dark
+    colorscheme Solarized
     " uncomment guifont according to your system
-    set guifont=Monaco:h14
+    " set guifont=consolas:h12
+    " set guifont=Monaco:h12
     " set guifont=ubuntu\ mono\ 14
     set lines=40 columns=120
+else
+    colorscheme desert
 endif
 
 " common settings
