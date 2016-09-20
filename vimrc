@@ -6,31 +6,28 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'L9'
-Plugin 'Solarized'
+Plugin 'tomasr/molokai'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-
 Plugin 'ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'mattn/emmet-vim'
 
-Plugin 'surround.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
+
+Plugin 'L9'
 Plugin 'Auto-Pairs'
+Plugin 'surround.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'honza/vim-snippets'
+Plugin 'sirver/ultisnips'
 
 Plugin 'scrooloose/syntastic.git' 
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'bling/vim-airline'
-
-" plugin for angular
-Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'tpope/vim-markdown'
 Plugin 'pangloss/vim-javascript'
-Plugin 'claco/jasmine.vim'
-
-" snippets
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 
 call vundle#end()
 
@@ -39,9 +36,9 @@ syntax enable
 
 if has("gui_running")
     set background=dark
-    colorscheme Solarized
+    colorscheme molokai
+    set guifont=consolas:h12
     " uncomment guifont according to your system
-    " set guifont=consolas:h12
     " set guifont=Monaco:h12
     " set guifont=ubuntu\ mono\ 14
     set lines=40 columns=120
