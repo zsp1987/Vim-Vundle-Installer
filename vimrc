@@ -6,29 +6,19 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'tomasr/molokai'
-
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'ctrlp.vim'
-
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'ervandew/supertab'
-
 Plugin 'L9'
-Plugin 'Auto-Pairs'
-Plugin 'surround.vim'
-Plugin 'mattn/emmet-vim'
-Plugin 'terryma/vim-multiple-cursors'
+Plugin 'Solarized'
+Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
-
-Plugin 'honza/vim-snippets'
-Plugin 'sirver/ultisnips'
-
+Plugin 'mattn/emmet-vim'
+Plugin 'surround.vim'
+Plugin 'Auto-Pairs'
 Plugin 'scrooloose/syntastic.git' 
-Plugin 'tpope/vim-markdown'
-Plugin 'pangloss/vim-javascript'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
+Plugin 'pangloss/vim-javascript'
 call vundle#end()
 
 filetype plugin indent on
@@ -36,9 +26,9 @@ syntax enable
 
 if has("gui_running")
     set background=dark
-    colorscheme molokai
-    set guifont=consolas:h12
+    colorscheme Solarized
     " uncomment guifont according to your system
+    " set guifont=consolas:h12
     " set guifont=Monaco:h12
     " set guifont=ubuntu\ mono\ 14
     set lines=40 columns=120
