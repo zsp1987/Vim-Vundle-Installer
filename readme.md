@@ -11,20 +11,10 @@ And will change the default font according to the system.
 2. After clone the repo, run `./install.sh` to finished the remain steps.
 3. That is it
 
-### Plugins inside
+### some Plugins inside
 - 'L9'
 - 'molokai'
 - 'scrooloose/nerdtree'
-- 'jistr/vim-nerdtree-tabs'
--  'ctrlp.vim'
 - 'tpope/vim-fugitive'
-- 'neocomplcache'
-- 'Shougo/neosnippet'
-- 'Shougo/neosnippet-snippets'
 - 'surround.vim'
-- 'https://github.com/terryma/vim-multiple-cursors.git'
 - 'scrooloose/syntastic.git' 
-- 'othree/javascript-libraries-syntax.vim'
-- 'pangloss/vim-javascript'
-- 'matthewsimo/angular-vim-snippets'
-- 'claco/jasmine.vim'

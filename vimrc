@@ -7,7 +7,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'L9'
-Plugin 'Solarized'
+Plugin 'monokai'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/emmet-vim'
@@ -26,7 +26,7 @@ syntax enable
 
 if has("gui_running")
     set background=dark
-    colorscheme Solarized
+    colorscheme monokai 
     " uncomment guifont according to your system
     " set guifont=consolas:h12
     " set guifont=Monaco:h12

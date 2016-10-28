@@ -6,7 +6,7 @@ if !([ -d ~/.vim/bundle/Vundle.vim ]); then
     vim +VundleInstall +qall
 fi
 
-cp .vimrc ~/.vimrc
+cp vimrc ~/.vimrc
 
 # change the font 
 if [ `uname` = "Darwin" ]; then
