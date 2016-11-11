@@ -7,10 +7,3 @@ if !([ -d ~/.vim/bundle/Vundle.vim ]); then
 fi
 
 cp vimrc ~/.vimrc
-
-# change the font 
-if [ `uname` = "Darwin" ]; then
-
-else
-
-fi
